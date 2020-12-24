@@ -36,6 +36,8 @@ function Form() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    // setValue("");
+    // setCount(4);
     console.log(value);
     console.log(count);
   };

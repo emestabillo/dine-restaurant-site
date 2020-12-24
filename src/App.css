@@ -1,38 +1,41 @@
-/* .App {
-  text-align: center;
+@import-normalize;
+
+:root {
+  /* Primary */
+  --beaver: hsl(27, 22%, 51%);
+  --codGray: hsl(0, 0%, 7%);
+  /* Secondary */
+  --mirage: hsl(234, 30%, 13%);
+  --ebonyClay: hsl(218, 21%, 18%);
+  --shuttleGray: hsl(217, 14%, 42%);
+  /* Font size:   */
+  /* font-size: 62.5%; 10px */
+  /* --font-size--small: 1.4rem; 14px 
+  --font-size--default: 1.6rem;  16px 
+  --font-size--large: 2.4rem; 24px */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+body {
+  font-family: "Spartan", sans-serif;
+  margin: 0 auto;
+  max-width: 144rem;
 }
 
-.App-link {
-  color: #61dafb;
+/* Homepage */
+.homeHeader {
+  background-image: url("./images/homepage/hero-bg-mobile.jpg");
+  min-height: 74.8rem;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-} */

@@ -1,10 +1,10 @@
-@import-normalize;
+/* @import-normalize;
 
 :root {
-  /* Primary */
+  Primary
   --beaver: hsl(27, 22%, 51%);
   --codGray: hsl(0, 0%, 7%);
-  /* Secondary */
+  Secondary
   --mirage: hsl(234, 30%, 13%);
   --ebonyClay: hsl(218, 21%, 18%);
   --shuttleGray: hsl(217, 14%, 42%);
@@ -27,4 +27,4 @@ body {
   font-family: "Spartan", sans-serif;
   margin: 0 auto;
   max-width: 144rem;
-}
+} */
