@@ -1,0 +1,11 @@
+.hero {
+  display: grid;
+  grid-row-gap: 1.6rem;
+  justify-items: center;
+  &__title {
+  }
+  &__subtitle {
+    padding-bottom: 0.53rem;
+    line-height: 1.6rem;
+  }
+}

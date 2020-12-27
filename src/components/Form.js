@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 // import styles from "../../components/form/form.css";
 
-function Form() {
+export default function Form() {
   const [value, setValue] = useState({
     name: "",
     email: "",
@@ -203,5 +203,3 @@ function Form() {
     </form>
   );
 }
-
-export default Form;
