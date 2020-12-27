@@ -1,4 +1,25 @@
+.header {
+  // background: url("../../images/homepage/hero-bg-mobile.jpg") no-repeat center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  // min-height: 74.8rem;
+  min-height: 49.86rem;
+  text-align: center;
+  color: #ffff;
+  padding: 23rem 0 15.4rem;
+  padding: 15.33rem 0 10.26rem;
+}
+
 .homeHeader {
   background-image: url("../../images/homepage/hero-bg-mobile.jpg");
-  min-height: 74.8rem;
+}
+// .bookingHeader {
+// }
+
+.logo {
+  margin: 0 auto;
+  border: none;
+  background: none;
+  margin-bottom: 2.13rem;
 }

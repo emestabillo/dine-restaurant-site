@@ -3,6 +3,8 @@
 *::before,
 *::after {
   box-sizing: inherit;
+  font-family: inherit;
+  transition: all 0.3s;
 }
 
 /* Remove default margin */
@@ -48,7 +50,7 @@ a:not([class]) {
 img,
 picture {
   max-width: 100%;
-  display: block;
+  // display: block;
 }
 
 /* Inherit fonts for inputs and buttons */

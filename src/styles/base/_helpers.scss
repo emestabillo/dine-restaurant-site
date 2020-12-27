@@ -9,9 +9,11 @@
  * 3. Leave some space on the edges, especially valuable on small screens
  */
 .container {
-  max-width: 111rem;
+  // max-width: 111rem;
+  max-width: 74rem;
   margin: 0 auto;
-  padding: 0 2.4rem;
+  // padding: 0 2.4rem;
+  padding: 0 1.6rem;
   width: 100%;
 }
 

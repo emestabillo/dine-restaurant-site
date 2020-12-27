@@ -1,15 +1,13 @@
 import React from "react";
 import logo from "../images/logo.svg";
 
-function Header({ children, hero }) {
+export default function Header({ children, hero }) {
   return (
-    <header className={hero}>
+    <header className={`header ${hero}`}>
       <a href="/">
-        <img src={logo} alt="dine logo" />
+        <img src={logo} className="logo" alt="dine logo" />
       </a>
       {children}
     </header>
   );
 }
-
-export default Header;
