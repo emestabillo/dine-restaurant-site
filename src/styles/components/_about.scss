@@ -1,0 +1,27 @@
+.about {
+  text-align: center;
+  color: var(--ebonyClay);
+
+  &__item:first-child {
+    position: relative;
+    margin-top: -5rem;
+  }
+
+  &__text {
+    padding-top: 5.8rem;
+
+    h2 {
+      padding-bottom: 1.1rem;
+    }
+
+    p {
+      padding-bottom: 5.33rem;
+    }
+
+    &::before {
+      content: url("../../images/patterns/pattern-divide.svg");
+      position: relative;
+      top: -2.13rem;
+    }
+  }
+}
