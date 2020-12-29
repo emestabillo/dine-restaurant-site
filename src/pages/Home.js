@@ -4,6 +4,7 @@ import HeaderText from "../components/HeaderText";
 // import Container from "../components/Container";
 import CTA from "../components/CTA";
 import About from "../components/About";
+import { MenuList } from "../components/MenuList";
 
 // import logo from "../images/logo.svg";
 
@@ -22,6 +23,7 @@ function Home() {
         </div>
       </Header>
       <About />
+      <MenuList/>
     </>
   );
 }

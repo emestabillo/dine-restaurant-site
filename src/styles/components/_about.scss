@@ -1,6 +1,6 @@
 .about {
   text-align: center;
-  color: var(--ebonyClay);
+  color: var(--clr-ebonyClay);
 
   &__item:first-child {
     position: relative;
@@ -19,8 +19,7 @@
     }
 
     &::before {
-      content: url("../../images/patterns/pattern-divide.svg");
-      position: relative;
+      @include divide;
       top: -2.13rem;
     }
   }

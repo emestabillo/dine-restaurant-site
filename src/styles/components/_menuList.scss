@@ -1,0 +1,28 @@
+.menu {
+  background: var(--clr-codGray);
+  color: var(--clr-white);
+  padding: 4.8rem 0;
+  text-align: center;
+
+  &:before {
+    @include divide;
+  }
+
+  h2 {
+    padding: 2.13rem 0 1rem;
+  }
+
+  p {
+  }
+
+  &__text {
+    h3 {
+      line-height: 156%;
+    }
+
+    p {
+      padding: 0 1.8rem;
+      line-height: 187%;
+    }
+  }
+}

@@ -27,13 +27,19 @@ h2 {
   letter-spacing: -0.4px;
 }
 
+h3 {
+  font-weight: var(--fw-bold);
+  font-size: 1.2rem;
+  letter-spacing: -0.22px;
+}
+
 p {
   line-height: 167%;
-  letter-spacing: -0.1875px;
+  letter-spacing: -0.19px;
 }
 
 // a {
-//   background: var(--codGray);
+//   background: var(--clr-codGray);
 //   border: 1px solid #fff;
 //   color: #fff;
 //   padding: 2.4rem 5.5rem;

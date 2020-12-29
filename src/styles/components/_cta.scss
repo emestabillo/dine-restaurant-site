@@ -5,7 +5,7 @@
   letter-spacing: 2px;
   // width: 24.5rem;
   width: 16.33rem;
-  // background: var(--codGray);
+  // background: var(--clr-codGray);
   // border: 1px solid #fff;
   // color: #fff;
   // padding: 2.4rem 5.5rem;
@@ -16,19 +16,19 @@
   font-size: 0.93rem;
 
   &--dark {
-    background: var(--codGray);
+    background: var(--clr-codGray);
     border: 1px solid #fff;
-    color: var(--white);
+    color: var(--clr-white);
 
     &:hover {
-      background: var(--white);
-      color: var(--codGray);
+      background: var(--clr-white);
+      color: var(--clr-codGray);
     }
   }
 }
 
 // &--dark {
-//   background: var(--codGray);
+//   background: var(--clr-codGray);
 //   border: 1px solid #fff;
 //   color: #fff;
 // }
