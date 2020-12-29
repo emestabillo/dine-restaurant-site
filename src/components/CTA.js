@@ -1,9 +1,9 @@
-import React from "react";
+// import React from "react";
 
-export default function CTA({ ctaText, ctaColor }) {
-  return (
-    <a href="" className={`cta ${ctaColor}`}>
-      {ctaText}
-    </a>
-  );
-}
+// export default function CTA({ ctaText, ctaColor }) {
+//   return (
+//     <a href="" className={`cta ${ctaColor}`}>
+//       {ctaText}
+//     </a>
+//   );
+// }
