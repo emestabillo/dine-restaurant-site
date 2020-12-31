@@ -1,25 +1,21 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-const devices = ["mobile", "tablet", "desktop"];
 const Image = (props) => {
-	const { src, srcArray = [], sizes = [], alt } = props;
+	const { src, devices, sizes, alt } = props;
 	const [fileName, fileType] = src.split(".");
-	console.log(fileName, fileType);
-	console.log(src.split("."), fileName, fileType);
-
-	return (
-		<picture>
-			<img src={src} alt={alt} />
-		</picture>
-	);
+	const srcSetGroup = devices.map(({ device, range }) => {
+		return `${fileName}-${device}.${fileType} ${range}`;
+	});
+	const srcSet = srcSetGroup.join(", ");
+	return <img srcSet={srcSet} sizes={sizes} src={src} alt={alt} />;
 };
 
 Image.proptype = {
 	src: PropTypes.string.isRequired,
 	alt: PropTypes.string.isRequired,
-	srcArray: PropTypes.array,
-	sizes: PropTypes.array,
+	sizes: PropTypes.array.isRequired,
+	devices: PropTypes.array.isRequired,
 };
 
 export default Image;
