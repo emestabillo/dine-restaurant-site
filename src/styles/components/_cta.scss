@@ -1,34 +1,11 @@
 .cta {
-  font-weight: var(--fw-semi-bold);
-  font-size: 0.93rem;
-  line-height: 106%;
-  letter-spacing: 2px;
-  // width: 24.5rem;
-  width: 16.33rem;
-  // background: var(--clr-codGray);
-  // border: 1px solid #fff;
-  // color: #fff;
-  // padding: 2.4rem 5.5rem;
-  padding: 1.6em 3.66em;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-weight: var(--fw-semi-bold);
-  font-size: 0.93rem;
+  background: url("../../images/homepage/ready-bg-mobile.jpg") no-repeat center;
+  background-size: cover;
+  color: var(--clr-white);
+  padding: 5.3rem 0;
+  text-align: center;
 
-  &--dark {
-    background: var(--clr-codGray);
-    border: 1px solid #fff;
-    color: var(--clr-white);
-
-    &:hover {
-      background: var(--clr-white);
-      color: var(--clr-codGray);
-    }
+  &__heading {
+    padding-bottom: 3.6rem;
   }
 }
-
-// &--dark {
-//   background: var(--clr-codGray);
-//   border: 1px solid #fff;
-//   color: #fff;
-// }

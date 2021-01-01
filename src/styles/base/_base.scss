@@ -5,7 +5,7 @@
 body {
   font-family: "Spartan", sans-serif;
   // font-size: 1.5rem;
-  font-size: 93.75%; //15px body
+  font-size: var(--fs-body1); //15px body
   margin: 0 auto;
   // max-width: 144rem;
   max-width: 96rem;
@@ -38,11 +38,15 @@ p {
   letter-spacing: -0.19px;
 }
 
-// a {
-//   background: var(--clr-codGray);
-//   border: 1px solid #fff;
-//   color: #fff;
-//   padding: 2.4rem 5.5rem;
-//   text-decoration: none;
-//   text-transform: uppercase;
-// }
+a {
+  //   background: var(--clr-codGray);
+  // border: 1px solid #fff;
+  color: var(--clr-white);
+  letter-spacing: 2px;
+  //   padding: 2.4rem 5.5rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: var(--fs-body2);
+  font-weight: var(--fw-semi-bold);
+  line-height: 114%;
+}
