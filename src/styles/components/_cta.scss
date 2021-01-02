@@ -1,9 +1,19 @@
 .cta {
-  background: url("../../images/homepage/ready-bg-mobile.jpg") no-repeat center;
+  background-image: url("../../images/homepage/ready-bg-mobile.jpg");
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   color: var(--clr-white);
   padding: 5.3rem 0;
   text-align: center;
+
+  @include med {
+    background-image: url("../../images/homepage/ready-bg-tablet.jpg");
+  }
+
+  @include xl {
+    background-image: url("../../images/homepage/ready-bg-desktop.jpg");
+  }
 
   &__text {
     @include xl {

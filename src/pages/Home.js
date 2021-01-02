@@ -2,6 +2,7 @@ import React from "react";
 import Header from "../components/Header";
 import HeaderText from "../components/HeaderText";
 // import Container from "../components/Container";
+import Features from "../components/Features";
 import CTA from "../components/CTA";
 import About from "../components/About";
 import { MenuList } from "../components/MenuList";
@@ -25,6 +26,7 @@ function Home() {
       </Header>
       <About />
       <MenuList/>
+      <Features />
       <CTA />
     </>
   );
