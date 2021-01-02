@@ -1,4 +1,24 @@
+//Decorative line
 @mixin divide {
   content: url("../../images/patterns/pattern-divide.svg");
   position: relative;
+}
+
+//MEDIA QUERIES
+@mixin med {
+  @media screen and (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin lg {
+  @media screen and (min-width: 992px) {
+    @content;
+  }
+}
+
+@mixin xl {
+  @media screen and (min-width: 1200px) {
+    @content;
+  }
 }

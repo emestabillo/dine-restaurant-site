@@ -1,13 +1,12 @@
-// html {
-//  font-size: 62.5%;
-// }
+html {
+  font-size: var(--fs-base);
+  box-sizing: border-box;
+  // background-color: var(--clr-codGray);
+}
 
 body {
   font-family: "Spartan", sans-serif;
-  // font-size: 1.5rem;
-  font-size: var(--fs-body1); //15px body
   margin: 0 auto;
-  // max-width: 144rem;
   max-width: 96rem;
 }
 
@@ -46,7 +45,7 @@ a {
   //   padding: 2.4rem 5.5rem;
   text-decoration: none;
   text-transform: uppercase;
-  font-size: var(--fs-body2);
+  font-size: var(--fs-body);
   font-weight: var(--fw-semi-bold);
   line-height: 114%;
 }

@@ -1,8 +1,8 @@
 .header {
-  // background: url("../../images/homepage/hero-bg-mobile.jpg") no-repeat center;
-  background-size: cover;
+  background-color: var(--clr-codGray);
+  background-size: contain;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: top center;
   // min-height: 74.8rem;
   min-height: 49.86rem;
   text-align: center;
@@ -13,6 +13,10 @@
 
 .homeHeader {
   background-image: url("../../images/homepage/hero-bg-mobile.jpg");
+
+  // @media screen and (min-width: 550px) {
+  //   background-image: url("../../images/homepage/hero-bg-tablet.jpg");
+  // }
 }
 // .bookingHeader {
 // }

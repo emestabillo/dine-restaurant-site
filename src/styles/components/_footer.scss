@@ -1,0 +1,46 @@
+.footer {
+  background-color: var(--clr-codGray);
+  color: var(--clr-white);
+  font-size: var(--fs-body);
+  // letter-spacing: 2px;
+  // line-height: 1.87rem;
+  padding: 5.33rem 1.6rem;
+  text-align: center;
+  text-transform: uppercase;
+
+  .container {
+    padding: 0;
+
+    @include med {
+      padding: 0 1.6rem;
+    }
+  }
+
+  p {
+    letter-spacing: 2px;
+    line-height: 1.87rem;
+  }
+
+  p:last-child {
+    padding-top: 2.13rem;
+
+    @include xl {
+      padding-top: 0;
+    }
+  }
+
+  &__text {
+    @include med {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      text-align: left;
+    }
+  }
+
+  &__details {
+    @include xl {
+      display: flex;
+      column-gap: 8.26rem;
+    }
+  }
+}
