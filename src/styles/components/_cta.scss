@@ -5,13 +5,28 @@
   padding: 5.3rem 0;
   text-align: center;
 
+  &__text {
+    @include xl {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
   &__heading {
     padding-bottom: 1.73rem;
+
+    @include med {
+      font-size: var(--fs-head2);
+      line-height: 140%;
+      letter-spacing: -0.5px;
+    }
   }
 
   a {
     display: inline-block;
-    // margin: 0 auto;
-    // width: 16.3rem;
+
+    @include xl {
+      height: 4.27rem;
+    }
   }
 }
