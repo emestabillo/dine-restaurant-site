@@ -20,7 +20,7 @@ function Home() {
               title="Exquisite dining since 1989"
               subtitle="Experience our seasonal menu in beautiful country surroundings. Eat the freshest produce from the comfort of our farmhouse"
             ></HeaderText>
-            <Link to='/booking' className="btn btn--dark">Book a table</Link>
+            <Link to='/booking' className="btn btn--light">Book a table</Link>
           </div>
         </div>
       </Header>

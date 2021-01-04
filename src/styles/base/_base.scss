@@ -49,3 +49,14 @@ a {
   font-weight: var(--fw-semi-bold);
   line-height: 114%;
 }
+
+a,
+button {
+  &:focus {
+    outline: 3px dashed var(--clr-beaver);
+  }
+
+  // &::-moz-focus-inner {
+  //   border: 0;
+  // }
+}
