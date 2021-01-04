@@ -1,25 +1,19 @@
 .btn {
-  // font-weight: var(--fw-semi-bold);
-  // font-size: 0.93rem;
-  // line-height: 106%;
-  // letter-spacing: 2px;
-  // width: 24.5rem;
-  // display: block;
-  // width: 16.33rem;
-
-  // background: var(--clr-codGray);
-  // border: 1px solid #fff;
-  // color: #fff;
-  // padding: 2.4rem 5.5rem;
-  // padding: 1.6em 3.66em;
+  display: inline-block;
   padding: 1.6rem 3.66rem;
-  // text-decoration: none;
-  // text-transform: uppercase;
+
+  &--light {
+    border: 1px solid #fff;
+
+    &:hover {
+      background: var(--clr-white);
+      color: var(--clr-codGray);
+    }
+  }
 
   &--dark {
-    // background: var(--clr-codGray);
-    border: 1px solid #fff;
-    // color: var(--clr-white);
+    background: var(--clr-codGray);
+    border: 1px solid var(--clr-codGray);
 
     &:hover {
       background: var(--clr-white);
@@ -27,9 +21,3 @@
     }
   }
 }
-
-// &--dark {
-//   background: var(--clr-codGray);
-//   border: 1px solid #fff;
-//   color: #fff;
-// }

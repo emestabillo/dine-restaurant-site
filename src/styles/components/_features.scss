@@ -1,3 +1,71 @@
 .features {
   padding: 5.3rem 0 8.26rem;
+  text-align: center;
+
+  &__info {
+    margin-top: 3.2rem;
+    display: grid;
+    grid-row-gap: 1.07rem;
+    justify-items: center;
+  }
+
+  .btn-container {
+    text-align: -moz-center;
+    text-align: -webkit-center;
+  }
+
+  button {
+    display: block;
+    border: none;
+    text-transform: uppercase;
+    background-color: white;
+    cursor: pointer;
+    font-weight: var(--fw-semi-bold);
+    font-size: var(--fs-body);
+    line-height: 200%;
+    letter-spacing: 2px;
+    opacity: 0.35;
+    margin-bottom: 1.07rem;
+    // transition: all 0.3s linear;
+
+    &:hover,
+    &:active,
+    &:focus {
+      opacity: 1;
+    }
+  }
+
+  h2 {
+    text-transform: capitalize;
+    margin-top: 1.6rem;
+  }
+
+  p {
+    padding-bottom: 1.07rem;
+  }
+
+  .selected {
+    position: relative;
+    opacity: 1;
+
+    &::after {
+      content: "";
+      position: absolute;
+      background-color: var(--clr-beaver);
+      height: 1px;
+      width: 3.2rem;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin-left: auto;
+      margin-right: auto;
+      // visibility: hidden;
+      // transform: scaleX(0);
+    }
+
+    // &:hover::after {
+    //   // visibility: visible;
+    //   transform: scaleX(1);
+    // }
+  }
 }

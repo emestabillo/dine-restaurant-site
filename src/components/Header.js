@@ -7,8 +7,7 @@ export default function Header({ children, hero }) {
     <header className={`header ${hero}`}>
       <Link to="/">
         <img src={logo} className="logo" alt="dine logo" /></Link>
-      {children}
-      
+      {children}      
     </header>
   );
 }
