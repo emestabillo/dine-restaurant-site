@@ -1,11 +1,10 @@
 import React, { useState } from 'react';
 import { items } from '../data';
-import { Link } from "react-router-dom";
+import Button from "./Button";
 import Container from "./Container";
 
 function Features() {
   const [featureInfo, setFeatureInfo] = useState(0);
-
   const {title, description, imgName} = items[featureInfo]
 
   return (
@@ -31,7 +30,7 @@ function Features() {
             </div>
             <h2>{title}</h2>
             <p>{description}</p>
-            <Link to='/booking' className="btn btn--dark">Book a table</Link>
+            <Button link="/booking" btnType="btn--dark" btnText="Book a table"></Button>
           </div>          
         </article>      
       </Container>   

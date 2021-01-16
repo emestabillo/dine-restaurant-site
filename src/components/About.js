@@ -8,8 +8,8 @@ export default function About() {
         <div className="about__item">
           <div className="about__img">
              <picture>
-              <source srcset="assets/homepage/enjoyable-place-desktop.jpg" media="(min-width: 992px)" />
-                <source srcset="assets/homepage/enjoyable-place-tablet.jpg" media="(min-width: 768px)" />
+              <source srcSet="assets/homepage/enjoyable-place-desktop.jpg" media="(min-width: 992px)" />
+                <source srcSet="assets/homepage/enjoyable-place-tablet.jpg" media="(min-width: 768px)" />
                 <img src="assets/homepage/enjoyable-place-mobile.jpg" alt="green field with animals " />
              </picture>
           </div>          
@@ -25,8 +25,8 @@ export default function About() {
         <div className="about__item">
           <div className="about__img">
             <picture>
-              <source srcset="assets/homepage/locally-sourced-desktop.jpg" media="(min-width: 992px)" />
-                <source srcset="assets/homepage/locally-sourced-tablet.jpg" media="(min-width: 768px)" />
+              <source srcSet="assets/homepage/locally-sourced-desktop.jpg" media="(min-width: 992px)" />
+                <source srcSet="assets/homepage/locally-sourced-tablet.jpg" media="(min-width: 768px)" />
                 <img src="assets/homepage/locally-sourced-mobile.jpg" alt="chef plating" />
              </picture>
           </div>

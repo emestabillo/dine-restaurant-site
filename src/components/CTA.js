@@ -1,6 +1,6 @@
 import React from 'react'
-import { Link } from "react-router-dom"
 import Container from "./Container"
+import Button from "./Button"
 
 export default function CTA() {
   return (
@@ -8,7 +8,7 @@ export default function CTA() {
       <Container>
         <div className="cta__text">
           <h2 className="cta__heading">Ready to make a reservation?</h2>
-          <Link to='/booking' className="btn btn--light">Book a table</Link>
+          <Button link="/booking" btnType="btn--light" btnText="Book a table"></Button>
         </div>       
       </Container>    
     </section>
