@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { items } from '../data';
 import { Link } from "react-router-dom";
+import Container from "./Container";
 
 function Features() {
   const [featureInfo, setFeatureInfo] = useState(0);
@@ -9,7 +10,7 @@ function Features() {
 
   return (
     <section className="features">
-      <div className="container">
+      <Container>
         <article>
         {/* <img 
           srcSet={`assets/${imgName}-mobile.jpg 326w, assets/${imgName}-tablet.jpg 573w, assets/${imgName}-desktop.jpg 540w`}
@@ -44,10 +45,9 @@ function Features() {
             <h2>{title}</h2>
             <p>{description}</p>
             <Link to='/booking' className="btn btn--dark">Book a table</Link>
-          </div>
-          
-        </article>
-      </div>    
+          </div>          
+        </article>      
+      </Container>   
     </section>
   )
 }
