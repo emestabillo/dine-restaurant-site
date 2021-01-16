@@ -9,15 +9,17 @@ export const MenuList = () => {
         <h2>A few highlights from our menu</h2>
         <p>We cater for all dietary requirements, but here’s a glimpse at some of our diner’s favourites. Our menu is revamped every season.</p>
         <MenuItem 
-        menuImg="salmon-mobile.jpg"
+          menuImg="salmon"
           menuTitle="Seared Salmon Fillet" 
           menuDescription="Our locally sourced salmon served with a refreshing buckwheat summer salad.">
         </MenuItem>
-        <MenuItem 
+        <MenuItem
+          menuImg="beef" 
           menuTitle="Rosemary Filet Mignon" 
           menuDescription="Our prime beef served to your taste with a delicious choice of seasonal sides.">
         </MenuItem>
-        <MenuItem 
+        <MenuItem
+          menuImg="chocolate"  
           menuTitle="Summer Fruit Chocolate Mousse" 
           menuDescription="Creamy mousse combined with summer fruits and dark chocolate shavings.">
         </MenuItem>
