@@ -14,15 +14,11 @@ function Home() {
   return (
     <>
       <Header hero="homeHeader">
-        <div className="container">
-          <div className="hero">
-            <HeaderText
-              title="Exquisite dining since 1989"
-              subtitle="Experience our seasonal menu in beautiful country surroundings. Eat the freshest produce from the comfort of our farmhouse"
-            ></HeaderText>
-            <Link to='/booking' className="btn btn--light">Book a table</Link>
-          </div>
-        </div>
+        <HeaderText
+          title="Exquisite dining since 1989"
+          subtitle="Experience our seasonal menu in beautiful country surroundings. Eat the freshest produce from the comfort of our farmhouse">
+          </HeaderText>
+        <Link to='/booking' className="btn btn--light">Book a table</Link>
       </Header>
       <About />
       <MenuList/>

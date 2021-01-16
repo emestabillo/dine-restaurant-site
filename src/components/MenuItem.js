@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const MenuItem = ({menuImg, menuTitle, menuDescription }) => {
+export default function MenuItem({menuImg, menuTitle, menuDescription }) {
   return (
     <div className="menu__item">
       <img src="" alt=""/>

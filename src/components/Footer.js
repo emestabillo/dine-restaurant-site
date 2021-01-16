@@ -1,11 +1,12 @@
 import React from "react"
 import logo from "../images/logo.svg";
 import {Link} from "react-router-dom";
+import Container from "./Container";
 
 export default function Footer () {
   return (
     <section className="footer">
-      <div className="container">
+      <Container>
         <div className="footer__text">
           <Link to="/">
             <img src={logo} className="logo" alt="dine logo" />
@@ -27,7 +28,7 @@ export default function Footer () {
             </p>
           </div>            
         </div>
-      </div>
+      </Container>
     </section>
   )
 }
