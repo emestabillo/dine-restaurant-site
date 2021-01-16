@@ -12,24 +12,11 @@ function Features() {
     <section className="features">
       <Container>
         <article>
-        {/* <img 
-          srcSet={`assets/${imgName}-mobile.jpg 326w, assets/${imgName}-tablet.jpg 573w, assets/${imgName}-desktop.jpg 540w`}
-          sizes="(min-width: 992px) 50vw, 100vw"
-        src={`assets/${imgName}-mobile.jpg`} alt="family gathering"/> */}
-          
           <picture>
-            <source media="(max-width:767px)" srcSet={`assets/${imgName}-mobile.jpg`} />
-            <source media="(max-width:991px)" srcSet={`assets/${imgName}-tablet.jpg`}/>
-            <img src={`assets/${imgName}-desktop.jpg`} alt={title}  />
+            <source media="(max-width:767px)" srcSet={`assets/homepage/${imgName}-mobile.jpg`} />
+            <source media="(max-width:991px)" srcSet={`assets/homepage/${imgName}-tablet.jpg`}/>
+            <img src={`assets/homepage/${imgName}-desktop.jpg`} alt={title}  />
           </picture>
-
-            {/*<picture>
-            <source media="(max-width:767px)" srcSet={`assets/${imgName}-mobile@2x.jpg`}/>
-            <source media="(max-width:991px)" srcSet={`assets/${imgName}-tablet@2x.jpg`}/>
-            <img src={`assets/${imgName}-desktop@2x.jpg`} alt={title}/>
-            </picture>*/}
-
-
           <div className="features__info">
             <div className="btn-container">
               {items.map((item, index) => {
