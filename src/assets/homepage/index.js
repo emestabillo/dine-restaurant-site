@@ -7,7 +7,6 @@ import enjoyablePlaceTab from '../homepage/enjoyable-place-tablet.jpg';
 import enjoyablePlaceMob from '../homepage/enjoyable-place-mobile.jpg';
 
 
-
 export const about = {
   locally: {
     alt: 'Alt is working',

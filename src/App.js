@@ -4,8 +4,6 @@ import {
   Switch,
   Route
 } from "react-router-dom";
-// import Form from "./components/form/Form";
-// import Hero from "./components/Hero";
 import Home from "./pages/Home";
 import Booking from "./pages/Booking"
 import Footer from "./components/Footer"
