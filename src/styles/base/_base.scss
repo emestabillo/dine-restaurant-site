@@ -38,11 +38,8 @@ p {
 }
 
 a {
-  //   background: var(--clr-codGray);
-  // border: 1px solid #fff;
   color: var(--clr-white);
   letter-spacing: 2px;
-  //   padding: 2.4rem 5.5rem;
   text-decoration: none;
   text-transform: uppercase;
   font-size: var(--fs-body);
@@ -53,7 +50,8 @@ a {
 a,
 button {
   &:focus {
-    outline: 3px dashed var(--clr-beaver);
+    outline: 2px dotted var(--clr-beaver);
+    outline-offset: 4px;
   }
 
   // &::-moz-focus-inner {

@@ -1,14 +1,14 @@
 import React, { useState } from 'react';
-import { items } from '../data';
+import { events } from '../data';
 import Button from "./Button";
 import Container from "./Container";
 
-function Features() {
-  const [featureInfo, setFeatureInfo] = useState(0);
-  const {title, description, imgName} = items[featureInfo]
+function Events() {
+  const [eventInfo, setEventInfo] = useState(0);
+  const {title, description, imgName} = events[eventInfo]
 
   return (
-    <section className="features">
+    <section className="events">
       <Container>
         <article>
           <picture>
@@ -18,12 +18,12 @@ function Features() {
           </picture>
           <div className="features__info">
             <div className="btn-container">
-              {items.map((item, index) => {
+              {events.map((event, index) => {
                 return (
                   <button className={`${index === featureInfo && 'selected'}`}
-                    key={item.id}
-                    onClick={() => setFeatureInfo(index)}>
-                    {item.title}                  
+                    key={event.id}
+                    onClick={() => setEventInfo(index)}>
+                    {event.title}                  
                   </button>
                 )} 
               )}
@@ -38,4 +38,4 @@ function Features() {
   )
 }
 
-export default Features;
+export default Events;

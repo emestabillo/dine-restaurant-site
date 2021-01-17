@@ -1,16 +1,18 @@
 import React from "react";
 import Container from "./Container"
+import {about} from '../assets/homepage'
 
 export default function About() {
+  const {images, alt} = about.locally
   return (
     <section className="about">
       <Container>
         <div className="about__item">
           <div className="about__img">
              <picture>
-              <source srcSet="assets/homepage/enjoyable-place-desktop.jpg" media="(min-width: 992px)" />
-                <source srcSet="assets/homepage/enjoyable-place-tablet.jpg" media="(min-width: 768px)" />
-                <img src="assets/homepage/enjoyable-place-mobile.jpg" alt="green field with animals " />
+              <source srcSet={images.desk} media="(min-width: 992px)" />
+                <source srcSet={images.tablet} media="(min-width: 768px)" />
+                <img src={images.mobile}alt={alt} />
              </picture>
           </div>          
           <div className="about__text">
