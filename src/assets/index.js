@@ -31,6 +31,31 @@ import socialDesk from './homepage/social-events-desktop.jpg'
 import socialTab from './homepage/social-events-tablet.jpg';
 import socialMob from './homepage/social-events-mobile.jpg';
 
+export const aboutItems = [
+  {
+    id: 1,
+    title: 'Enjoyable place for all the family',
+    description: 'Our relaxed surroundings make dining with us a great experience for everyone. We can even arrange a tour of the farm before your meal.',
+    images: {
+      desk: enjoyablePlaceDesk,
+      tablet: enjoyablePlaceTab,
+      mobile: enjoyablePlaceMob,
+    },
+    alt: 'chef plating a scrumptious dish'
+  },
+  {
+    id: 2,
+    title: 'The most locally sourced food',
+    description: 'All our ingredients come directly from our farm or local fishery.So you can be sure that you’re eating the freshest, most sustainable food.',
+    images: {
+      desk: locallySourcedDesk,
+      tablet: locallySourcedTab,
+      mobile: locallySourcedMob,
+    },
+    alt: 'green field with animals'
+  }
+]
+
 export const eventItems = [
   {
     id: 1,
@@ -52,7 +77,6 @@ export const eventItems = [
       mobile: specialMob
     },
   },
- 
   {
    id: 3,
     title: 'social events',
@@ -61,6 +85,36 @@ export const eventItems = [
       desk: socialDesk,
       tablet: socialTab,
       mobile: socialMob
+    },
+  },
+];
+
+export const menuItems = [
+  {
+    id: 1,
+    title: 'seared salmon fillet',
+    description: 'Our locally sourced salmon served with a refreshing buckwheat summer salad.',
+    images: {
+      desk: salmonDesk,
+      mobile: salmonMob
+    },
+  },
+  {
+    id: 2,
+    title: 'rosemary filet mignon',
+    description: 'Our prime beef served to your taste with a delicious choice of seasonal sides.',
+    images: {
+      desk: beefDesk,
+      mobile: beefMob
+    },
+  },
+  {
+   id: 3,
+    title: 'summer fruit chocolate mousse',
+    description: 'Creamy mousse combined with summer fruits and dark chocolate shavings.',
+    images: {
+      desk: chocolateDesk,
+      mobile: chocolateMob
     },
   },
 ];
