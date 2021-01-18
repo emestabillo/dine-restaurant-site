@@ -2,6 +2,9 @@
   display: grid;
   grid-row-gap: 1.6rem;
   justify-items: center;
+  max-width: 30rem;
+  margin: 0 auto;
+
   &__title {
   }
   &__subtitle {

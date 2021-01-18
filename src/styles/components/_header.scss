@@ -12,14 +12,24 @@
 }
 
 .homeHeader {
-  background-image: url("../../images/homepage/hero-bg-mobile.jpg");
+  background-image: url("../../assets/homepage/hero-bg-mobile.jpg");
 
-  // @media screen and (min-width: 550px) {
-  //   background-image: url("../../images/homepage/hero-bg-tablet.jpg");
-  // }
+  @include med {
+    background-image: url("../../assets/homepage/hero-bg-tablet.jpg");
+  }
 }
+
 .bookingHeader {
-  background-image: url("../../images/booking/hero-bg-mobile.jpg");
+  background-image: url("../../assets/booking/hero-bg-mobile.jpg");
+  background-size: cover;
+
+  @include med {
+    background-image: url("../../assets/booking/hero-bg-tablet.jpg");
+  }
+
+  @include lg {
+    background-image: url("../../assets/booking/hero-bg-desktop.jpg");
+  }
 }
 
 .logo {

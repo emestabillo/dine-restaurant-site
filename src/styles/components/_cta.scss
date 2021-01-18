@@ -1,5 +1,5 @@
 .cta {
-  background-image: url("../../images/homepage/ready-bg-mobile.jpg");
+  background-image: url("../../assets/homepage/ready-bg-mobile.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -8,11 +8,11 @@
   text-align: center;
 
   @include med {
-    background-image: url("../../images/homepage/ready-bg-tablet.jpg");
+    background-image: url("../../assets/homepage/ready-bg-tablet.jpg");
   }
 
   @include xl {
-    background-image: url("../../images/homepage/ready-bg-desktop.jpg");
+    background-image: url("../../assets/homepage/ready-bg-desktop.jpg");
   }
 
   &__text {
