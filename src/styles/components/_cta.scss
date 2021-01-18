@@ -4,7 +4,7 @@
   background-repeat: no-repeat;
   background-position: center;
   color: var(--clr-white);
-  padding: 5.3rem 0;
+  padding: 8rem 0;
   text-align: center;
 
   @include med {
@@ -23,7 +23,7 @@
   }
 
   &__heading {
-    padding-bottom: 1.73rem;
+    padding-bottom: 2.6rem;
 
     @include med {
       font-size: var(--fs-head2);
@@ -36,7 +36,7 @@
     // display: inline-block;
 
     @include xl {
-      height: 4.27rem;
+      height: 6.4rem;
     }
   }
 }

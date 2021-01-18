@@ -22,3 +22,9 @@
     @content;
   }
 }
+
+@mixin xxl {
+  @media screen and (min-width: 1441px) {
+    @content;
+  }
+}

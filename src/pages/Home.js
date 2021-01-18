@@ -13,7 +13,7 @@ function Home() {
       <Header hero="homeHeader">
         <HeaderText
           title='Exquisite dining since 1989'
-          subtitle="Experience our seasonal menu in beautiful country surroundings. Eat the freshest produce from the comfort of our farmhouse">
+          subtitle="Experience our seasonal menu in beautiful country surroundings. Eat the freshest produce from the comfort of our farmhouse.">
           </HeaderText>
         <Button link="/booking" btnType="btn--light" btnText="Book a table"></Button>
       </Header>

@@ -4,23 +4,23 @@
 
   &__item:first-child {
     position: relative;
-    margin-top: -5rem;
+    margin-top: -7.5rem;
   }
 
   &__text {
-    padding-top: 5.8rem;
+    padding-top: 8.7rem;
 
     h2 {
-      padding-bottom: 1.1rem;
+      padding-bottom: 16.5rem;
     }
 
     p {
-      padding-bottom: 5.33rem;
+      padding-bottom: 8rem;
     }
 
     &::before {
       @include divide;
-      top: -2.13rem;
+      top: -3.2rem;
     }
   }
 }

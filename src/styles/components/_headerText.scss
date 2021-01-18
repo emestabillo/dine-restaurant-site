@@ -1,14 +1,50 @@
 .hero {
   display: grid;
-  grid-row-gap: 1.6rem;
+  grid-row-gap: 2.4rem;
   justify-items: center;
-  max-width: 30rem;
   margin: 0 auto;
 
-  &__title {
+  @include med {
+    padding: 0 8.8rem;
   }
+
+  @include lg {
+    justify-items: left;
+    max-width: 52.3rem;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__title {
+    padding-top: 0.8rem;
+
+    @include med {
+      font-size: 4.8rem;
+      line-height: 133%;
+      letter-spacing: -0.06px;
+    }
+
+    @include lg {
+      font-size: 6.4rem;
+      line-height: 112%;
+      letter-spacing: -0.8px;
+    }
+  }
+
   &__subtitle {
-    padding-bottom: 0.53rem;
-    line-height: 1.6rem;
+    padding-bottom: 0.8rem;
+    max-width: 45rem;
+
+    @include med {
+      max-width: unset;
+      font-size: 1.8rem;
+      letter-spacing: -0.225px;
+      padding-bottom: 0;
+    }
+
+    @include lg {
+      padding-bottom: 1.8rem;
+      line-height: 167%;
+    }
   }
 }

@@ -1,38 +1,46 @@
 html {
-  font-size: var(--fs-base);
+  font-size: 62.5%;
   box-sizing: border-box;
-  // background-color: var(--clr-codGray);
 }
 
 body {
   font-family: "Spartan", sans-serif;
   margin: 0 auto;
-  max-width: 96rem;
+  max-width: 144rem;
+
+  @include xxl {
+    max-width: unset;
+  }
+}
+
+h1,
+h2 {
+  font-size: 3.2rem;
+}
+
+h2,
+h3 {
+  font-weight: var(--fw-bold);
 }
 
 h1 {
-  // font-size: 3.2rem;
-  font-size: 2.13rem;
-  font-weight: 300;
-  line-height: 2.66rem;
-  /* line-height: 4; */
+  font-weight: var(--fw-light);
+  line-height: 4rem;
   letter-spacing: -0.4px;
 }
 
 h2 {
-  font-weight: var(--fw-bold);
-  font-size: 2.13rem;
   line-height: 125%;
   letter-spacing: -0.4px;
 }
 
 h3 {
-  font-weight: var(--fw-bold);
-  font-size: 1.2rem;
+  font-size: var(--fs-head3);
   letter-spacing: -0.22px;
 }
 
 p {
+  font-size: var(--fs-body2);
   line-height: 167%;
   letter-spacing: -0.19px;
 }
@@ -54,7 +62,7 @@ button {
     outline-offset: 4px;
   }
 
-  // &::-moz-focus-inner {
-  //   border: 0;
-  // }
+  &::-moz-focus-inner {
+    border: 0;
+  }
 }

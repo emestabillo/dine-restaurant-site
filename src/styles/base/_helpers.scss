@@ -10,14 +10,24 @@
  */
 .container {
   // max-width: 111rem;
-  max-width: 74rem;
+  max-width: 111rem;
   margin: 0 auto;
-  // padding: 0 2.4rem;
-  padding: 0 1.6rem;
+  padding: 0 2.4rem;
+  // padding: 0 1.6rem;
   width: 100%;
+
+  @include lg {
+    padding: 0 8.4rem;
+  }
 
   @include xl {
     width: 90%;
+    padding: 0;
+  }
+
+  @include xxl {
+    // padding-left: 16.5rem;
+    max-width: unset;
   }
 }
 

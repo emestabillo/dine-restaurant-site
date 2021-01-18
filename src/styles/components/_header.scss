@@ -1,27 +1,41 @@
 .header {
   background-color: var(--clr-codGray);
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: top center;
   // min-height: 74.8rem;
-  min-height: 49.86rem;
   text-align: center;
   color: #ffff;
-  padding: 23rem 0 15.4rem;
-  padding: 15.33rem 0 10.26rem;
+  padding: 24.4rem 0 14rem;
+
+  @include med {
+    // min-height: 99.2rem;
+    padding: 37.4rem 0 21.6rem;
+  }
+
+  @include lg {
+    padding: 6.5rem 0 19.5rem;
+    background-size: cover;
+    text-align: left;
+  }
 }
 
 .homeHeader {
   background-image: url("../../assets/homepage/hero-bg-mobile.jpg");
+  background-size: contain;
 
   @include med {
     background-image: url("../../assets/homepage/hero-bg-tablet.jpg");
+  }
+
+  @include lg {
+    background-image: url("../../assets/homepage/hero-bg-desktop.jpg");
+    background-size: cover;
   }
 }
 
 .bookingHeader {
   background-image: url("../../assets/booking/hero-bg-mobile.jpg");
-  background-size: cover;
 
   @include med {
     background-image: url("../../assets/booking/hero-bg-tablet.jpg");
@@ -36,5 +50,8 @@
   margin: 0 auto;
   border: none;
   background: none;
-  margin-bottom: 0.53rem;
+
+  @include lg {
+    padding-bottom: 12.1rem;
+  }
 }
