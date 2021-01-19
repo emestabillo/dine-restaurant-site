@@ -13,7 +13,7 @@
     padding: 37.4rem 0 21.6rem;
   }
 
-  @include lg {
+  @include xl {
     padding: 6.5rem 0 19.5rem;
     background-size: cover;
     text-align: left;
@@ -28,7 +28,7 @@
     background-image: url("../../assets/homepage/hero-bg-tablet.jpg");
   }
 
-  @include lg {
+  @include xl {
     background-image: url("../../assets/homepage/hero-bg-desktop.jpg");
     background-size: cover;
   }
@@ -41,7 +41,7 @@
     background-image: url("../../assets/booking/hero-bg-tablet.jpg");
   }
 
-  @include lg {
+  @include xl {
     background-image: url("../../assets/booking/hero-bg-desktop.jpg");
   }
 }
@@ -51,7 +51,7 @@
   border: none;
   background: none;
 
-  @include lg {
+  @include xl {
     padding-bottom: 12.1rem;
   }
 }

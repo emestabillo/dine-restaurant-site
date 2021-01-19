@@ -2,25 +2,122 @@
   text-align: center;
   color: var(--clr-ebonyClay);
 
-  &__item:first-child {
-    position: relative;
-    margin-top: -7.5rem;
+  &__item {
+    @include xl {
+      display: flex;
+    }
+
+    &__img {
+      @include xl {
+        flex: 1;
+      }
+    }
   }
 
   &__text {
     padding-top: 8.7rem;
+    max-width: 55rem;
+    margin: 0 auto;
+
+    @include med {
+      padding: 8rem 11.6rem 0;
+      max-width: unset;
+    }
+
+    @include xl {
+      align-self: center;
+      flex: 1;
+      padding: 17.7rem 0 0 12.5rem;
+      text-align: left;
+    }
 
     h2 {
-      padding-bottom: 16.5rem;
+      padding-bottom: 1.6rem;
+
+      @include med {
+        font-size: 4rem;
+        line-height: 140%;
+        letter-spacing: -0.5px;
+      }
     }
 
     p {
       padding-bottom: 8rem;
+      letter-spacing: -0.1875px;
+
+      @include med {
+        font-size: 1.8rem;
+        letter-spacing: -0.225px;
+        padding-bottom: 12rem;
+      }
+
+      @include xl {
+        padding-bottom: 0;
+      }
     }
 
     &::before {
       @include divide;
       top: -3.2rem;
+
+      @include xl {
+        top: -4.8rem;
+      }
+    }
+  }
+}
+
+.first {
+  position: relative;
+  margin-top: -7.5rem;
+
+  @include med {
+    margin-top: -9.5rem;
+  }
+
+  @include xl {
+    margin-top: -7rem;
+    padding-bottom: 12.1rem;
+  }
+
+  .about__img {
+    // @include med {
+    //   &::after {
+    //     content: "";
+    //     background: url("../../assets/patterns/pattern-curve-top-right.svg")
+    //       no-repeat;
+    //     position: absolute;
+    //     left: -2.4rem;
+    //     // height: 32rem;
+    //     // width: 50%;
+    //     height: 42%;
+    //     width: 100%;
+    //     background-size: 45rem 32rem;
+    //     top: 19.5rem;
+    //     border: 1px solid red;
+
+    //     @include lg {
+    //       left: -12.4rem;
+    //     }
+    //   }
+    // }
+  }
+}
+
+.last {
+  @include xl {
+    flex-direction: row-reverse;
+  }
+
+  .about__img {
+    @include xl {
+      margin-bottom: -8rem;
+    }
+  }
+
+  .about__text {
+    @include xl {
+      padding: 20.3rem 12.5rem 16.7rem 0;
     }
   }
 }

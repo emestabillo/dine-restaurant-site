@@ -6,10 +6,11 @@ html {
 body {
   font-family: "Spartan", sans-serif;
   margin: 0 auto;
-  max-width: 144rem;
+  max-width: 170rem;
+  // overflow: hidden;
 
-  @include xxl {
-    max-width: unset;
+  @media screen and (min-width: 1701px) {
+    box-shadow: 0 3px 15px;
   }
 }
 
@@ -35,12 +36,12 @@ h2 {
 }
 
 h3 {
-  font-size: var(--fs-head3);
+  font-size: 1.8rem;
   letter-spacing: -0.22px;
 }
 
 p {
-  font-size: var(--fs-body2);
+  font-size: 1.5rem;
   line-height: 167%;
   letter-spacing: -0.19px;
 }
@@ -50,7 +51,7 @@ a {
   letter-spacing: 2px;
   text-decoration: none;
   text-transform: uppercase;
-  font-size: var(--fs-body);
+  font-size: 1.4rem;
   font-weight: var(--fw-semi-bold);
   line-height: 114%;
 }

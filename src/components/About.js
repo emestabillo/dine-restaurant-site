@@ -10,10 +10,10 @@ function About() {
           const {id, title, description, images, alt} = about
           const {mobile, tablet, desk} = images          
           return (
-            <div key={id} className="about__item">
+            <div key={id} className={`about__item ${id % 2 === 0 ?'last' : 'first'}`}>
               <div className="about__img">
                 <picture>
-                  <source srcSet={desk} media="(min-width: 992px)" />
+                  <source srcSet={desk} media="(min-width: 1200px)" />
                   <source srcSet={tablet} media="(min-width: 768px)" />
                   <img src={mobile} alt={alt} />
                 </picture>

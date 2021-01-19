@@ -5,10 +5,10 @@
   margin: 0 auto;
 
   @include med {
-    padding: 0 8.8rem;
+    width: 57.3rem;
   }
 
-  @include lg {
+  @include xl {
     justify-items: left;
     max-width: 52.3rem;
     margin: 0;
@@ -24,7 +24,7 @@
       letter-spacing: -0.06px;
     }
 
-    @include lg {
+    @include xl {
       font-size: 6.4rem;
       line-height: 112%;
       letter-spacing: -0.8px;
@@ -42,7 +42,7 @@
       padding-bottom: 0;
     }
 
-    @include lg {
+    @include xl {
       padding-bottom: 1.8rem;
       line-height: 167%;
     }
