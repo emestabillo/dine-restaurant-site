@@ -6,9 +6,13 @@ export const MenuList = () => {
   return (
     <section className="menu">
       <Container>
-        <h2>A few highlights from our menu</h2>
-        <p>We cater for all dietary requirements, but here’s a glimpse at some of our diner’s favourites. Our menu is revamped every season.</p>
-        {menuItems.map((item) => {
+      <div className="menu__content">
+        <header>
+          <h2>A few highlights from our menu</h2>
+          <p>We cater for all dietary requirements, but here’s a glimpse at some of our diner’s favourites. Our menu is revamped every season.</p>
+        </header>
+        <div className="menu__list">
+          {menuItems.map((item) => {
           const {id, title, description, images} = item
           const {mobile, desk} = images
           return (
@@ -23,8 +27,10 @@ export const MenuList = () => {
               </div>
             </div>
           )
-        }
-      )} 
+          })}
+          </div>
+      </div>
+        
       </Container>
     </section>
   )

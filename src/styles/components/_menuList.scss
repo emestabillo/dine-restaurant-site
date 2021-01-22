@@ -1,28 +1,149 @@
 .menu {
   background: var(--clr-codGray);
   color: var(--clr-white);
-  padding: 4.8rem 0;
+  padding: 7.2rem 0;
   text-align: center;
 
-  &:before {
-    @include divide;
+  @include med {
+    padding-left: 5.8rem;
   }
 
-  h2 {
-    padding: 2.13rem 0 1rem;
+  @include xl {
+    padding: 20rem 0 12rem;
   }
 
-  p {
+  &__content {
+    @include xl {
+      display: flex;
+    }
   }
 
-  &__text {
-    h3 {
-      line-height: 156%;
+  header {
+    @include med {
+      padding: 0 13rem;
+    }
+
+    @include xl {
+      flex: 1;
+      padding: 0;
+      text-align: left;
+    }
+
+    &:before {
+      @include divide;
+      @include xl {
+        top: -4.8rem;
+      }
+    }
+
+    h2 {
+      padding: 3.2rem 0 1.6rem;
+
+      @include lg {
+        font-size: 4rem;
+        line-height: 140%;
+        letter-spacing: -0.5px;
+      }
+
+      @include xl {
+        padding: 0 12.5rem 0 0;
+      }
     }
 
     p {
-      padding: 0 1.8rem;
+      padding-bottom: 6.4rem;
+
+      @include med {
+        padding-bottom: 5.6rem;
+      }
+
+      @include xl {
+        padding: 1.6rem 0 0;
+        font-size: 1.8rem;
+        letter-spacing: -0.225px;
+        max-width: 44.5rem;
+      }
+    }
+  }
+
+  &__list {
+    @include xl {
+      flex: 1;
+    }
+  }
+
+  &__item {
+    position: relative;
+
+    @include med {
+      display: flex;
+    }
+
+    &:not(:first-child)::before {
+      position: absolute;
+      content: "";
+      height: 1px;
+      width: 100%;
+      top: -2.4rem;
+      border-top: 1px solid var(--clr-white);
+      opacity: 0.15;
+
+      @include med {
+        top: 0.6rem;
+      }
+    }
+
+    &:not(:first-child) {
+      padding-top: 2.8rem;
+    }
+  }
+
+  picture {
+    @include med {
+      flex: 1;
+      position: relative;
+
+      &::before {
+        position: absolute;
+        content: "";
+        height: 1px;
+        width: 3.2rem;
+        top: 1.8rem;
+        // left: 15rem;
+        transform: translateX(12.8rem);
+        border-top: 1px solid var(--clr-beaver);
+      }
+    }
+  }
+
+  &__text {
+    padding-top: 3.2rem;
+    padding-bottom: 4.9rem;
+
+    @include med {
+      flex: 2;
+      text-align: left;
+      padding: 0 7.4rem 2.8rem 6.2rem;
+      // padding-left: 6.2rem;
+      // padding: 0;
+    }
+
+    @include xl {
+      padding-right: 0;
+    }
+
+    h3 {
+      line-height: 156%;
+      text-transform: capitalize;
+    }
+
+    p {
+      padding: 0.4rem 1.8rem 0;
       line-height: 187%;
+
+      @include med {
+        padding: 0;
+      }
     }
   }
 }
