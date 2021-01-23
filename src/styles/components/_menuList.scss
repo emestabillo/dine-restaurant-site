@@ -4,6 +4,26 @@
   padding: 7.2rem 0;
   text-align: center;
 
+  @include med {
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: "";
+      background-image: url(../../assets/patterns/pattern-curve-top-left.svg);
+      // content: url("../../assets/patterns/pattern-curve-top-left.svg");
+      top: -32rem;
+      // right: -52rem;
+      right: 0;
+      width: 37.5rem;
+      height: 32rem;
+
+      @include xl {
+        width: 89.5rem;
+      }
+    }
+  }
+
   @include xl {
     padding: 20rem 0 12rem;
   }

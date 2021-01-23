@@ -39,6 +39,10 @@
         line-height: 140%;
         letter-spacing: -0.5px;
       }
+
+      @include xl {
+        padding-right: 3.5rem;
+      }
     }
 
     p {
@@ -79,29 +83,6 @@
     margin-top: -7rem;
     padding-bottom: 12.1rem;
   }
-
-  .about__img {
-    // @include med {
-    //   &::after {
-    //     content: "";
-    //     background: url("../../assets/patterns/pattern-curve-top-right.svg")
-    //       no-repeat;
-    //     position: absolute;
-    //     left: -2.4rem;
-    //     // height: 32rem;
-    //     // width: 50%;
-    //     height: 42%;
-    //     width: 100%;
-    //     background-size: 45rem 32rem;
-    //     top: 19.5rem;
-    //     border: 1px solid red;
-
-    //     @include lg {
-    //       left: -12.4rem;
-    //     }
-    //   }
-    // }
-  }
 }
 
 .last {
@@ -109,9 +90,32 @@
     flex-direction: row-reverse;
   }
 
+  picture {
+    @include med {
+      position: relative;
+
+      &::after {
+        position: absolute;
+        content: url("../../assets/patterns/pattern-lines.svg");
+        bottom: 5.6rem;
+        right: -5.8rem;
+
+        @include xl {
+          right: -1.8rem;
+          bottom: 36.2rem;
+        }
+
+        @media screen and (min-width: 1400px) {
+          right: -11.6rem;
+        }
+      }
+    }
+  }
+
   .about__img {
     @include xl {
       margin-bottom: -8rem;
+      z-index: 1;
     }
   }
 
