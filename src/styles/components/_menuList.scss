@@ -4,10 +4,6 @@
   padding: 7.2rem 0;
   text-align: center;
 
-  @include med {
-    padding-left: 5.8rem;
-  }
-
   @include xl {
     padding: 20rem 0 12rem;
   }
@@ -39,7 +35,7 @@
     h2 {
       padding: 3.2rem 0 1.6rem;
 
-      @include lg {
+      @include xl {
         font-size: 4rem;
         line-height: 140%;
         letter-spacing: -0.5px;
@@ -67,8 +63,12 @@
   }
 
   &__list {
+    @include med {
+      padding: 0 7.3rem;
+    }
     @include xl {
       flex: 1;
+      padding: 0;
     }
   }
 
@@ -85,6 +85,7 @@
       height: 1px;
       width: 100%;
       top: -2.4rem;
+      left: 0;
       border-top: 1px solid var(--clr-white);
       opacity: 0.15;
 
@@ -100,7 +101,6 @@
 
   picture {
     @include med {
-      flex: 1;
       position: relative;
 
       &::before {
@@ -109,7 +109,6 @@
         height: 1px;
         width: 3.2rem;
         top: 1.8rem;
-        // left: 15rem;
         transform: translateX(12.8rem);
         border-top: 1px solid var(--clr-beaver);
       }
@@ -123,9 +122,7 @@
     @include med {
       flex: 2;
       text-align: left;
-      padding: 0 7.4rem 2.8rem 6.2rem;
-      // padding-left: 6.2rem;
-      // padding: 0;
+      padding: 0 0 2.8rem 6.2rem;
     }
 
     @include xl {
