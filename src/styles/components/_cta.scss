@@ -9,10 +9,12 @@
 
   @include med {
     background-image: url("../../assets/homepage/ready-bg-tablet.jpg");
+    padding: 6.4rem 0;
   }
 
   @include xl {
     background-image: url("../../assets/homepage/ready-bg-desktop.jpg");
+    padding: 9.2rem 0;
   }
 
   &__text {
@@ -20,23 +22,19 @@
       display: flex;
       justify-content: space-between;
     }
-  }
 
-  &__heading {
-    padding-bottom: 2.6rem;
+    h2 {
+      padding-bottom: 2.6rem;
 
-    @include med {
-      font-size: 4rem;
-      line-height: 140%;
-      letter-spacing: -0.5px;
-    }
-  }
+      @include med {
+        font-size: 4rem;
+        line-height: 140%;
+        letter-spacing: -0.5px;
+      }
 
-  a {
-    // display: inline-block;
-
-    @include xl {
-      height: 6.4rem;
+      @include xl {
+        padding: 0;
+      }
     }
   }
 }

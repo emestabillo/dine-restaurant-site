@@ -7,7 +7,7 @@ export default function CTA() {
     <section className="cta">
       <Container>
         <div className="cta__text">
-          <h2 className="cta__heading">Ready to make a reservation?</h2>
+          <h2>Ready to make a reservation?</h2>
           <Button link="/booking" btnType="btn--light" btnText="Book a table"></Button>
         </div>       
       </Container>    
