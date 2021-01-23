@@ -17,7 +17,7 @@ function Events() {
             <source media="(min-width:768px)" srcSet={tablet} />
             <img src={mobile} alt={title}  />
           </picture>
-          <div className="events__info">
+          
             <div className="btn-container">
               {eventItems.map((event, index) => {
                 return (
@@ -29,9 +29,10 @@ function Events() {
                 )} 
               )}
             </div>
-            <h2>{title}</h2>
-            <p>{description}</p>
-            <Button link="/booking" btnType="btn--dark" btnText="Book a table"></Button>
+            <div className="events__info">
+              <h2>{title}</h2>
+              <p>{description}</p>
+              <Button link="/booking" btnType="btn--dark" btnText="Book a table"></Button>
           </div>          
         </article>      
       </Container>   
