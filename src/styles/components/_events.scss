@@ -108,6 +108,7 @@
     &:active,
     &:focus {
       opacity: 1;
+      transition: unset;
     }
   }
 

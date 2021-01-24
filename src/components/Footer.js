@@ -7,18 +7,18 @@ export default function Footer () {
   return (
     <section className="footer">
       <Container>
-        <div className="footer__text">
+        <div className="footer__contents">
           <Link to="/">
-            <img src={logo} className="logo" alt="dine logo" />
+            <img src={logo} className="footer__logo" alt="dine logo" />
           </Link>
-          <div className="footer__details">
-            <p className="footer__address">
+
+            <address className="footer__address">
                 Marthwaite, Sedbergh
                 <br/>
                 Cumbria
                 <br/>
                 +00 44 123 4567
-            </p>
+            </address>
             <p className="footer__hours">
               Open times
               <br/>
@@ -26,7 +26,7 @@ export default function Footer () {
               <br/>
               Sat - Sun: 9:00 am - 11:30 pm
             </p>
-          </div>            
+                   
         </div>
       </Container>
     </section>

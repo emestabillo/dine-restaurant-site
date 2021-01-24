@@ -9,7 +9,7 @@ export default function Header({ children, hero }) {
       <Container>
         <div className="hero">
             <Link to="/">
-              <img src={logo} className="logo" alt="dine logo" />
+              <img src={logo} className="header__logo" alt="dine logo" />
             </Link>
             {children}
         </div>      

@@ -2,45 +2,57 @@
   background-color: var(--clr-codGray);
   color: var(--clr-white);
   font-size: 1.4rem;
-  // letter-spacing: 2px;
-  // line-height: 1.87rem;
-  padding: 5.33rem 1.6rem;
+  padding: 8rem 0;
   text-align: center;
   text-transform: uppercase;
 
-  .container {
-    padding: 0;
-
-    @include med {
-      padding: 0 1.6rem;
-    }
-  }
-
-  p {
-    letter-spacing: 2px;
-    line-height: 1.87rem;
-  }
-
-  p:last-child {
-    padding-top: 2.13rem;
-
-    @include xl {
-      padding-top: 0;
-    }
-  }
-
-  &__text {
+  &__contents {
     @include med {
       display: grid;
-      grid-template-columns: 1fr 3fr;
+      grid-template-columns: 10.4rem 1fr;
+      grid-template-rows: repeat(2, max-content);
+      column-gap: 13rem;
       text-align: left;
+      grid-template-areas: "logo address" ". times";
+    }
+
+    @include lg {
+      grid-template-columns: 10.4rem 1fr 1fr;
+      grid-template-areas: "logo address times";
+      column-gap: 7.4rem;
+    }
+
+    @include xl {
+      column-gap: 12.4rem;
     }
   }
 
-  &__details {
-    @include xl {
-      display: flex;
-      column-gap: 8.26rem;
+  &__logo {
+    grid-area: logo;
+  }
+
+  &__address,
+  &__hours {
+    font-size: 1.4rem;
+    line-height: 200%;
+    letter-spacing: 2px;
+  }
+
+  &__address {
+    font-style: normal;
+    padding: 4rem 0 3.2rem;
+    grid-area: address;
+
+    @include med {
+      padding-top: 0;
     }
+
+    @include lg {
+      padding-bottom: 0;
+    }
+  }
+
+  &__hours {
+    grid-area: times;
   }
 }

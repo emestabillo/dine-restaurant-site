@@ -3,25 +3,44 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top center;
-  // min-height: 74.8rem;
   text-align: center;
   color: #ffff;
   padding: 24.4rem 0 14rem;
 
   @include med {
-    // min-height: 99.2rem;
     padding: 37.4rem 0 21.6rem;
+    position: relative;
+  }
 
-    // @include med {
-    // padding: 12rem 0;
+  @include xl {
+    padding: 6.5rem 0 19.5rem;
+    background-size: cover;
+    text-align: left;
+  }
+
+  &__logo {
+    margin: 0 auto;
+    border: none;
+    background: none;
+
+    @include xl {
+      padding-bottom: 12.1rem;
+    }
+  }
+}
+
+.homeHeader {
+  background-image: url("../../assets/homepage/hero-bg-mobile.jpg");
+  background-size: contain;
+
+  @include med {
+    background-image: url("../../assets/homepage/hero-bg-tablet.jpg");
     position: relative;
 
     &::after {
       position: absolute;
       content: "";
       background-image: url("../../assets/patterns/pattern-curve-top-right.svg");
-      // content: url("../../assets/patterns/pattern-curve-top-right.svg");
-      // left: -56rem;
       left: 0;
       bottom: -42.5rem;
       width: 37.5rem;
@@ -33,22 +52,6 @@
         width: 89.5rem;
       }
     }
-    // }
-  }
-
-  @include xl {
-    padding: 6.5rem 0 19.5rem;
-    background-size: cover;
-    text-align: left;
-  }
-}
-
-.homeHeader {
-  background-image: url("../../assets/homepage/hero-bg-mobile.jpg");
-  background-size: contain;
-
-  @include med {
-    background-image: url("../../assets/homepage/hero-bg-tablet.jpg");
   }
 
   @include xl {
@@ -66,15 +69,5 @@
 
   @include xl {
     background-image: url("../../assets/booking/hero-bg-desktop.jpg");
-  }
-}
-
-.logo {
-  margin: 0 auto;
-  border: none;
-  background: none;
-
-  @include xl {
-    padding-bottom: 12.1rem;
   }
 }
