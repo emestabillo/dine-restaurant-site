@@ -31,8 +31,10 @@
 
   picture {
     grid-area: img;
+
     @include med {
       position: relative;
+
       &::before {
         content: "";
         background: url("../../assets/patterns/pattern-lines.svg");
@@ -41,11 +43,13 @@
         width: 16rem;
         bottom: 32rem;
         left: -5.7rem;
+      }
+    }
 
-        @include xl {
-          top: -3.7rem;
-          left: -3.7rem;
-        }
+    @include xl {
+      &::before {
+        top: -3.7rem;
+        left: -3.7rem;
       }
     }
   }

@@ -2,6 +2,41 @@
   text-align: center;
   color: var(--clr-ebonyClay);
 
+  @include med {
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: "";
+      background-image: url("../../assets/patterns/pattern-curve-top-right.svg");
+      left: -4rem;
+      top: 20rem;
+      width: 37.5rem;
+      height: 32rem;
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      background-image: url("../../assets/patterns/pattern-curve-top-left.svg");
+      bottom: 0;
+      right: 0;
+      width: 37.5rem;
+      height: 32rem;
+    }
+  }
+
+  @include xl {
+    &::before,
+    &::after {
+      width: 89.5rem;
+    }
+    &::before {
+      left: 0;
+      top: 36.5rem;
+    }
+  }
+
   &__item {
     @include xl {
       display: flex;
@@ -86,6 +121,9 @@
 }
 
 .last {
+  @include med {
+  }
+
   @include xl {
     flex-direction: row-reverse;
   }
@@ -99,15 +137,19 @@
         content: url("../../assets/patterns/pattern-lines.svg");
         bottom: 5.6rem;
         right: -5.8rem;
+      }
+    }
 
-        @include xl {
-          right: -1.8rem;
-          bottom: 36.2rem;
-        }
+    @include xl {
+      &::after {
+        right: -1.8rem;
+        bottom: 36.2rem;
+      }
+    }
 
-        @media screen and (min-width: 1400px) {
-          right: -11.6rem;
-        }
+    @media screen and (min-width: 1400px) {
+      &::after {
+        right: -11.6rem;
       }
     }
   }

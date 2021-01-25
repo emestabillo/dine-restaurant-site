@@ -35,23 +35,6 @@
 
   @include med {
     background-image: url("../../assets/homepage/hero-bg-tablet.jpg");
-    position: relative;
-
-    &::after {
-      position: absolute;
-      content: "";
-      background-image: url("../../assets/patterns/pattern-curve-top-right.svg");
-      left: 0;
-      bottom: -42.5rem;
-      width: 37.5rem;
-      height: 32rem;
-
-      @include xl {
-        left: -1.2rem;
-        bottom: -61.5rem;
-        width: 89.5rem;
-      }
-    }
   }
 
   @include xl {
