@@ -1,7 +1,10 @@
 //Decorative line
 @mixin divide {
-  content: url("../../assets/patterns/pattern-divide.svg");
-  position: relative;
+  content: "";
+  background-image: url("../../assets/patterns/pattern-divide.svg");
+  position: absolute;
+  height: 0.7rem;
+  width: 7.1rem;
 }
 
 //MEDIA QUERIES

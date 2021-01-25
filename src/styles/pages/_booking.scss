@@ -31,7 +31,9 @@
     }
 
     a:first-child {
-      justify-self: left;
+      @include med {
+        justify-self: left;
+      }
     }
 
     .btn {
