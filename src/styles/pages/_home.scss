@@ -1,0 +1,13 @@
+.homeHeader {
+  background-image: url("../../assets/homepage/hero-bg-mobile.jpg");
+  background-size: contain;
+
+  @include med {
+    background-image: url("../../assets/homepage/hero-bg-tablet.jpg");
+  }
+
+  @include xl {
+    background-image: url("../../assets/homepage/hero-bg-desktop.jpg");
+    background-size: cover;
+  }
+}

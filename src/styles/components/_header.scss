@@ -19,38 +19,15 @@
   }
 
   &__logo {
+    width: 8.2rem;
+    height: 3.2rem;
     margin: 0 auto;
     border: none;
     background: none;
 
-    @include xl {
-      padding-bottom: 12.1rem;
+    @include med {
+      height: auto;
+      width: auto;
     }
-  }
-}
-
-.homeHeader {
-  background-image: url("../../assets/homepage/hero-bg-mobile.jpg");
-  background-size: contain;
-
-  @include med {
-    background-image: url("../../assets/homepage/hero-bg-tablet.jpg");
-  }
-
-  @include xl {
-    background-image: url("../../assets/homepage/hero-bg-desktop.jpg");
-    background-size: cover;
-  }
-}
-
-.bookingHeader {
-  background-image: url("../../assets/booking/hero-bg-mobile.jpg");
-
-  @include med {
-    background-image: url("../../assets/booking/hero-bg-tablet.jpg");
-  }
-
-  @include xl {
-    background-image: url("../../assets/booking/hero-bg-desktop.jpg");
   }
 }

@@ -1,0 +1,43 @@
+.bookingHeader {
+  padding: 5.6rem 0 22.8rem;
+  background-image: url("../../assets/booking/hero-bg-mobile.jpg");
+
+  @include med {
+    background-image: url("../../assets/booking/hero-bg-tablet.jpg");
+  }
+
+  @include xl {
+    background-image: url("../../assets/booking/hero-bg-desktop.jpg");
+    padding: 6.5rem 0 12.6rem;
+  }
+
+  .hero {
+    row-gap: 1.6rem;
+
+    &__title {
+      padding-top: 2.4rem;
+
+      @include med {
+        padding-top: 4.8rem;
+      }
+
+      @include xl {
+        padding-top: 13.7rem;
+      }
+    }
+
+    &__subtitle {
+      padding: 0.8rem 0 0;
+    }
+
+    a:first-child {
+      justify-self: left;
+    }
+
+    .btn {
+      @include med {
+        display: none;
+      }
+    }
+  }
+}
