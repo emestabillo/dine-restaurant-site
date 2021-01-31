@@ -193,13 +193,13 @@ export default function Form(initialState) {
           </fieldset>
           <div className="people">            
             <button className="math" onClick={decrement}>
-              <svg xmlns="http://www.w3.org/2000/svg" width="7" height="3" aria-hidden="true" tabIndex="0"><path fill="#9E7F66" d="M6.425 2.977V.601H.629v2.376z"/>
+              <svg xmlns="http://www.w3.org/2000/svg" width="7" height="3" aria-hidden="true"><path fill="#9E7F66" d="M6.425 2.977V.601H.629v2.376z"/>
               </svg>
               <span className="sr-only">Click to remove people from the reservation</span>
             </button>
             <strong>{count} {individuals(count)}</strong>
             <button className="math" onClick={increment}>
-              <svg xmlns="http://www.w3.org/2000/svg" width="10" height="11" aria-hidden="true" tabIndex="0"><path fill="#9E7F66" d="M6.227 10.156V6.727h3.429V4.342H6.227V.913H3.842v3.429H.413v2.385h3.429v3.429z"/>
+              <svg xmlns="http://www.w3.org/2000/svg" width="10" height="11" aria-hidden="true"><path fill="#9E7F66" d="M6.227 10.156V6.727h3.429V4.342H6.227V.913H3.842v3.429H.413v2.385h3.429v3.429z"/>
               </svg>
               <span className="sr-only">Click to add more people to the reservation</span>
             </button>     

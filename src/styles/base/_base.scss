@@ -62,7 +62,9 @@ button {
 
 a,
 button,
-input {
+input,
+select,
+.phone {
   &:focus {
     outline: 2px dotted var(--clr-beaver);
     outline-offset: 4px;

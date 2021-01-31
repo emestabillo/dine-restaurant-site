@@ -38,10 +38,6 @@
     letter-spacing: 2px;
   }
 
-  h4 {
-    font-weight: var(--fw-regular);
-  }
-
   &__address {
     font-style: normal;
     padding: 4rem 0 3.2rem;
@@ -58,6 +54,10 @@
 
   &__hours {
     grid-area: times;
+
+    h4 {
+      font-weight: var(--fw-regular);
+    }
   }
 
   .phone {
