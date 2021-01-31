@@ -41,7 +41,7 @@ export const aboutItems = [
       tablet: enjoyablePlaceTab,
       mobile: enjoyablePlaceMob,
     },
-    alt: 'chef plating a scrumptious dish'
+    alt: 'green field with animals'
   },
   {
     id: 2,
@@ -52,7 +52,7 @@ export const aboutItems = [
       tablet: locallySourcedTab,
       mobile: locallySourcedMob,
     },
-    alt: 'green field with animals'
+      alt: 'chef plating a scrumptious dish'
   }
 ]
 

@@ -42,13 +42,15 @@ h3 {
   letter-spacing: -0.22px;
 }
 
-p {
+p,
+strong {
   font-size: 1.5rem;
   line-height: 167%;
   letter-spacing: -0.19px;
 }
 
-a {
+a,
+button {
   color: var(--clr-white);
   letter-spacing: 2px;
   text-decoration: none;
