@@ -7,6 +7,14 @@
   width: 7.1rem;
 }
 
+@mixin patternLines {
+  position: absolute;
+  content: "";
+  background-image: url(../../assets/patterns/pattern-lines.svg);
+  width: 16rem;
+  height: 7.6rem;
+}
+
 //MEDIA QUERIES
 @mixin med {
   @media screen and (min-width: 768px) {

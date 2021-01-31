@@ -9,9 +9,13 @@
 
     &::before {
       position: absolute;
-      content: url("../../assets/patterns/pattern-curve-top-right.svg");
+      content: "";
+      background-image: url("../../assets/patterns/pattern-curve-top-left.svg");
+      transform: rotateY(180deg);
+      width: 40%;
+      height: 32rem;
       top: 0;
-      left: -48rem;
+      left: 0;
     }
   }
 
@@ -36,11 +40,7 @@
       position: relative;
 
       &::before {
-        content: "";
-        background: url("../../assets/patterns/pattern-lines.svg");
-        position: absolute;
-        height: 7.6rem;
-        width: 16rem;
+        @include patternLines;
         bottom: 32rem;
         left: -5.7rem;
       }
@@ -99,6 +99,7 @@
     letter-spacing: 2px;
     opacity: 0.35;
     margin-bottom: 1.6rem;
+    color: var(--clr-ebonyClay);
 
     @include med {
       background-color: transparent;

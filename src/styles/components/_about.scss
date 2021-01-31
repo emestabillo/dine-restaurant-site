@@ -139,8 +139,7 @@
       position: relative;
 
       &::after {
-        position: absolute;
-        content: url("../../assets/patterns/pattern-lines.svg");
+        @include patternLines;
         bottom: 5.6rem;
         right: -5.8rem;
       }
