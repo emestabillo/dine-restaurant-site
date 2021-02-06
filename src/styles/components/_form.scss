@@ -45,6 +45,10 @@
       border-bottom: 1px solid #8e8e8e;
     }
 
+    input:focus {
+      border-bottom-color: var(--clr-codGray);
+    }
+
     ::placeholder {
       opacity: 0.5;
     }
@@ -66,21 +70,68 @@
       color: var(--clr-codGray);
     }
 
-    fieldset {
-      padding: 0;
-      border: 0;
-    }
+    // fieldset {
+    //   padding: 0;
+    //   border: 0;
+    // }
 
-    legend {
-      // font-size: 1.8rem;
-      // padding-bottom: 0.8rem;
-      font-size: 1.8rem;
-      padding-bottom: 1.8rem;
-    }
+    // legend {
+    //   font-size: 1.8rem;
+    //   padding-bottom: 1.8rem;
+    // }
 
     select {
       opacity: 0.5;
-      // padding-bottom: 1.6rem;
+      appearance: none;
+      background-color: transparent;
+      // padding: 0 1em 0 0;
+      margin: 0;
+      width: 100%;
+      font-family: inherit;
+      cursor: inherit;
+      line-height: inherit;
+      padding: 0.8rem 0 1.6rem 10%;
+
+      &:focus {
+        opacity: 1;
+      }
+
+      // options {
+      //   // content: "";
+      //   width: 0.8em;
+      //   height: 0.5em;
+      //   background-color: var(--clr-beaver);
+      //   clip-path: polygon(100% 0%, 0 0%, 50% 100%);
+      // }
+    }
+
+    .am {
+      position: relative;
+      &::after {
+        position: absolute;
+        content: "";
+        width: 1.8rem;
+        height: 1.1rem;
+        background-image: url(../../assets/icons/icon-arrow.svg);
+        right: 5%;
+        top: 20%;
+
+        @include med {
+          right: 0.9rem;
+        }
+      }
+    }
+
+    // .date {
+    //   display: flex;
+    // }
+
+    .grid {
+      @include med {
+        display: grid;
+        grid-template-columns: max-content 1fr;
+        column-gap: 5.2rem;
+      }
     }
 
     .date-picker,
@@ -88,6 +139,12 @@
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       column-gap: 1.4rem;
+
+      padding-top: 0.8rem;
+    }
+
+    .field-info {
+      align-self: center;
     }
 
     .people {
@@ -112,5 +169,27 @@
       width: initial;
       cursor: pointer;
     }
+  }
+
+  .error-border {
+    border-bottom-color: var(--clr-error);
+  }
+
+  .error-color {
+    color: var(--clr-error);
+  }
+
+  .error-message {
+    color: var(--clr-error);
+    padding-top: 1rem;
+    padding-left: 1.6rem;
+    font-size: 1rem;
+    line-height: 100%;
+    transition: 0.3s;
+  }
+
+  .date .error-message,
+  .time .error-message {
+    padding: 0;
   }
 }

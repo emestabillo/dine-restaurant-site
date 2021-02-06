@@ -8,7 +8,7 @@ const useForm = (validate) => {
     day: "",
     year: "",
     hour: "",
-    minutes: "",
+    minutes: "00",
     period: "am",
   });
   const [count, setCount] = useState(4);
@@ -17,7 +17,7 @@ const useForm = (validate) => {
 
   useEffect(() => {
     if (Object.keys(errors).length === 0 && isSubmitting) {
-      console.log("No errors, submit callback called!");
+      console.log("Reservation successful!");
     }
   }, [errors, isSubmitting]);
 

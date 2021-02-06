@@ -25,9 +25,12 @@ export default function Form() {
               value={values.name}
               placeholder="Name"
               onChange={handleChange}
+              className={errors.name ? "error-border" : ""}
               required
             />
-            {errors.name && <p>{errors.name}</p>}
+            {errors.name && (
+              <small className="error-message">{errors.name}</small>
+            )}
           </label>
           <label>
             <input
@@ -36,35 +39,45 @@ export default function Form() {
               placeholder="Email"
               value={values.email}
               type="email"
+              className={errors.email ? "error-border" : ""}
               required
             />
-            {errors.email && <p>{errors.email}</p>}
+            {errors.email && (
+              <small className="error-message">{errors.email}</small>
+            )}
           </label>
-          <fieldset className="date">
-            <legend>Pick a date</legend>
-            {errors.date && <p>{errors.date}</p>}
+          <div className="date grid">
+            <div className="field-info">
+              <p className={errors.date ? "error-color" : ""}>Pick a date</p>
+              {errors.date && <p className="error-message">{errors.date}</p>}
+            </div>
             <div className="date-picker">
-              <label className="sr-only">month</label>
-              <select
-                name="month"
-                onChange={handleChange}
-                value={values.month}
-                required
-              >
-                <option value="">MM</option>
-                <option value="january">01</option>
-                <option value="february">02</option>
-                <option value="march">03</option>
-                <option value="april">04</option>
-                <option value="may">05</option>
-                <option value="june">06</option>
-                <option value="july">07</option>
-                <option value="august">08</option>
-                <option value="september">09</option>
-                <option value="october">10</option>
-                <option value="november">11</option>
-                <option value="december">12</option>
-              </select>
+              <label htmlFor="month" className="sr-only">
+                month
+              </label>
+              <div className="select">
+                <select
+                  name="month"
+                  onChange={handleChange}
+                  value={values.month}
+                  id="month"
+                  required
+                >
+                  <option value="">MM</option>
+                  <option value="january">01</option>
+                  <option value="february">02</option>
+                  <option value="march">03</option>
+                  <option value="april">04</option>
+                  <option value="may">05</option>
+                  <option value="june">06</option>
+                  <option value="july">07</option>
+                  <option value="august">08</option>
+                  <option value="september">09</option>
+                  <option value="october">10</option>
+                  <option value="november">11</option>
+                  <option value="december">12</option>
+                </select>
+              </div>
 
               <label className="sr-only">day</label>
               <select
@@ -118,10 +131,12 @@ export default function Form() {
                 <option value="2022">2022</option>
               </select>
             </div>
-          </fieldset>
-          <fieldset className="time">
-            <legend>Pick a time</legend>
-            {errors.time && <p>{errors.time}</p>}
+          </div>
+          <div className="time grid">
+            <div className="field-info">
+              <p className={errors.time ? "error-color" : ""}>Pick a time</p>
+              {errors.time && <p className="error-message">{errors.time}</p>}
+            </div>
             <div className="time-picker">
               <label className="sr-only">hour</label>
               <select
@@ -157,17 +172,19 @@ export default function Form() {
                 <option value="45">45</option>
               </select>
               <label className="sr-only">am or pm</label>
-              <select
-                name="period"
-                onChange={handleChange}
-                value={values.period}
-                required
-              >
-                <option value="am">AM</option>
-                <option value="pm">PM</option>
-              </select>
+              <div className="am">
+                <select
+                  name="period"
+                  onChange={handleChange}
+                  value={values.period}
+                  required
+                >
+                  <option value="am">AM</option>
+                  <option value="pm">PM</option>
+                </select>
+              </div>
             </div>
-          </fieldset>
+          </div>
           <div className="people">
             <button className="math" onClick={decrement}>
               <svg
@@ -202,7 +219,9 @@ export default function Form() {
               </span>
             </button>
           </div>
-          <button className="btn btn--dark">Make Reservation</button>
+          <button type="submit" className="btn btn--dark">
+            Make Reservation
+          </button>
         </form>
       </Container>
     </section>
