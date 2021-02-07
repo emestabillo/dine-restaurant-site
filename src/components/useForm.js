@@ -14,6 +14,7 @@ const useForm = (validate) => {
   const [count, setCount] = useState(4);
   const [errors, setErrors] = useState({});
   const [isSubmitting, setIsSubmitting] = useState(false);
+ 
 
   useEffect(() => {
     if (Object.keys(errors).length === 0 && isSubmitting) {
@@ -26,6 +27,7 @@ const useForm = (validate) => {
     setErrors(validate(values));
     setIsSubmitting(true);
     console.log(values, count);
+    e.target.reset();
   };
 
   const handleChange = (e) => {

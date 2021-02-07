@@ -12,7 +12,7 @@ export default function validate(values) {
     errors.date = "This field is incomplete";
   }
   if ((values.hour < 9 || values.hour === "12") && values.period === "am") {
-    errors.time = "Reservation time invalid. Please try again.";
+    errors.time = "Invalid time";
   }
   if (!values.hour) {
     errors.time = "This field is incomplete";

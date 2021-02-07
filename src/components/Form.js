@@ -2,6 +2,7 @@ import React from "react";
 import Container from "./Container";
 import useForm from "./useForm";
 import validate from "./FormValidation";
+import arrow from '../assets/icons/icon-arrow.svg'
 
 export default function Form() {
   const {
@@ -25,12 +26,12 @@ export default function Form() {
               value={values.name}
               placeholder="Name"
               onChange={handleChange}
-              className={errors.name ? "error-border" : ""}
+              className={errors.name && "error-border"}
               required
             />
             {errors.name && (
-              <small className="error-message">{errors.name}</small>
-            )}
+               <small className="error-message">{errors.name}</small>
+             )} 
           </label>
           <label>
             <input
@@ -39,7 +40,7 @@ export default function Form() {
               placeholder="Email"
               value={values.email}
               type="email"
-              className={errors.email ? "error-border" : ""}
+              className={errors.email && "error-border"}
               required
             />
             {errors.email && (
@@ -48,7 +49,7 @@ export default function Form() {
           </label>
           <div className="date grid">
             <div className="field-info">
-              <p className={errors.date ? "error-color" : ""}>Pick a date</p>
+              <p className={`heading ${errors.date && 'error-color'}`}>Pick a date</p>
               {errors.date && <p className="error-message">{errors.date}</p>}
             </div>
             <div className="date-picker">
@@ -78,10 +79,10 @@ export default function Form() {
                   <option value="december">12</option>
                 </select>
               </div>
-
-              <label className="sr-only">day</label>
+              <label htmlFor="day" className="sr-only">day</label>
               <select
                 name="day"
+                id="day"
                 onChange={handleChange}
                 value={values.day}
                 required
@@ -119,9 +120,10 @@ export default function Form() {
                 <option value="30">30</option>
                 <option value="31">31</option>
               </select>
-              <label className="sr-only">year</label>
+              <label htmlFor="year" className="sr-only">year</label>
               <select
                 name="year"
+                id="year"
                 onChange={handleChange}
                 value={values.year}
                 required
@@ -134,15 +136,16 @@ export default function Form() {
           </div>
           <div className="time grid">
             <div className="field-info">
-              <p className={errors.time ? "error-color" : ""}>Pick a time</p>
+              <p className={`heading ${errors.time && "error-color"}`}>Pick a time</p>
               {errors.time && <p className="error-message">{errors.time}</p>}
             </div>
             <div className="time-picker">
-              <label className="sr-only">hour</label>
+              <label htmlFor="hour" className="sr-only">hour</label>
               <select
                 name="hour"
                 onChange={handleChange}
                 value={values.hour}
+                id="hour"
                 required
               >
                 <option value="">00</option>
@@ -159,11 +162,12 @@ export default function Form() {
                 <option value="11">11</option>
                 <option value="12">12</option>
               </select>
-              <label className="sr-only">minutes</label>
+              <label htmlFor="minutes" className="sr-only">minutes</label>
               <select
                 name="minutes"
                 onChange={handleChange}
                 value={values.minutes}
+                id="minutes"
                 required
               >
                 <option value="00">00</option>
@@ -171,17 +175,19 @@ export default function Form() {
                 <option value="30">30</option>
                 <option value="45">45</option>
               </select>
-              <label className="sr-only">am or pm</label>
-              <div className="am">
+              <label htmlFor="period" className="sr-only">am or pm</label>
+              <div className="am">                         
                 <select
                   name="period"
+                  id="period"
                   onChange={handleChange}
                   value={values.period}
                   required
-                >
+                > 
                   <option value="am">AM</option>
                   <option value="pm">PM</option>
                 </select>
+                <img src={arrow} alt="arrow" className="arrow" aria-hidden="true"/> 
               </div>
             </div>
           </div>
