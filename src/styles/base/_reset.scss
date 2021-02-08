@@ -37,9 +37,7 @@ html {
 
 /* Set core body defaults */
 body {
-  // min-height: 100vh;
   text-rendering: optimizeSpeed;
-  // line-height: 1.5;
 }
 
 /* A elements that don't have a class get default styles */
@@ -51,7 +49,6 @@ a:not([class]) {
 img,
 picture {
   max-width: 100%;
-  // display: block;
 }
 
 /* Inherit fonts for inputs and buttons */

@@ -2,7 +2,6 @@ import React from "react";
 import Container from "./Container";
 import useForm from "./useForm";
 import validate from "./FormValidation";
-import arrow from '../assets/icons/icon-arrow.svg'
 
 export default function Form() {
   const {
@@ -176,7 +175,6 @@ export default function Form() {
                 <option value="45">45</option>
               </select>
               <label htmlFor="period" className="sr-only">am or pm</label>
-              <div className="am">                         
                 <select
                   name="period"
                   id="period"
@@ -187,8 +185,6 @@ export default function Form() {
                   <option value="am">AM</option>
                   <option value="pm">PM</option>
                 </select>
-                <img src={arrow} alt="arrow" className="arrow" aria-hidden="true"/> 
-              </div>
             </div>
           </div>
           <div className="people">

@@ -17,7 +17,6 @@ function Events() {
             <source media="(min-width:768px)" srcSet={tablet} />
             <img src={mobile} alt={title}  />
           </picture>
-          
             <div className="btn-container">
               {eventItems.map((event, index) => {
                 return (

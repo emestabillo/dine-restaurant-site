@@ -19,15 +19,14 @@ const useForm = (validate) => {
   useEffect(() => {
     if (Object.keys(errors).length === 0 && isSubmitting) {
       console.log("Reservation successful!");
-    }
-  }, [errors, isSubmitting]);
+    } //eslint-disable-next-line
+  }, []);
 
   const handleSubmit = (e) => {
     if (e) e.preventDefault();
     setErrors(validate(values));
     setIsSubmitting(true);
-    console.log(values, count);
-    e.target.reset();
+    // e.target.reset();
   };
 
   const handleChange = (e) => {

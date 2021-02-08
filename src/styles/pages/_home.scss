@@ -7,6 +7,7 @@
   }
 
   @include xl {
+    max-height: 82rem;
     background-image: url("../../assets/homepage/hero-bg-desktop.jpg");
     background-size: cover;
   }

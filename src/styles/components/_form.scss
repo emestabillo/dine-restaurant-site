@@ -88,20 +88,6 @@
       }
     }
 
-    .am {
-      position: relative;
-    }
-
-    .arrow {
-      position: absolute;
-      right: 5%;
-      top: 20%;
-
-      @include med {
-        right: 0.9rem;
-      }
-    }
-
     .grid {
       @include med {
         display: grid;
@@ -173,7 +159,3 @@
     padding: 0;
   }
 }
-
-// .rotate {
-//   transform: rotate(180deg);
-// }

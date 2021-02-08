@@ -1,24 +1,15 @@
 @import
   'abstracts/variables',
-  // 'abstracts/functions',
   'abstracts/mixins';
-  // 'abstracts/placeholders';
 
 @import
   'base/reset',
   'base/helpers',
   'base/base';
 
-//   'base/typography';
-
-// @import
-//   'layout/header',
-//   'layout/footer';
-
  @import
- 'components/header',
- 'components/headerText',
-//   'components/checkbox',
+  'components/header',
+  'components/headerText',
   'components/button',
   'components/about',
   'components/menuList',
@@ -26,12 +17,8 @@
   'components/cta',
   'components/footer',
   'components/form';
-//   'components/input',
-//   'components/card',
-//   'components/spinner',
-//   'components/skeleton';
 
 @import
   'pages/home',
   'pages/booking';
-//   'pages/not-found-page';
+

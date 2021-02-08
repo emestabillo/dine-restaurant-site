@@ -13,8 +13,7 @@ export default function Footer () {
           </Link>
             <address className="footer__address"><span className="sr-only">Dine ltd.</span> 
               <p>Marthwaite, Sedbergh<span style={{display: "block"}}>Cumbria</span></p>
-              <p className="phone" tabIndex="0"><span className="sr-only">Phone:</span>+00 44 123 4567</p>
-              {/*<a className="phone" href="tel:1-562-867-5309"><p><span className="sr-only">Phone:</span>+00 44 123 4567</p></a> */}
+              <a className="phone" href="tel:1-562-867-5309"><p><span className="sr-only">Phone:</span>+00 44 123 4567</p></a>
               </address>
               <div className="footer__hours">
                 <h4>Open times</h4>
