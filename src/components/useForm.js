@@ -14,13 +14,15 @@ const useForm = (validate) => {
   const [count, setCount] = useState(4);
   const [errors, setErrors] = useState({});
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [valid, setValid] = useState(false);
  
 
   useEffect(() => {
     if (Object.keys(errors).length === 0 && isSubmitting) {
-      console.log("Reservation successful!");
-    } //eslint-disable-next-line
-  }, []);
+      setValid(true);
+      console.log({...values,count})
+    } // eslint-disable-next-line
+  }, [errors, isSubmitting]);
 
   const handleSubmit = (e) => {
     if (e) e.preventDefault();
@@ -53,6 +55,8 @@ const useForm = (validate) => {
     errors,
     increment,
     decrement,
+    valid,
+    isSubmitting
   };
 };
 

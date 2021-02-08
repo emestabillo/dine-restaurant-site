@@ -12,12 +12,15 @@ export default function Form() {
     decrement,
     handleChange,
     handleSubmit,
+    valid,
+    isSubmitting
   } = useForm(validate);
 
   return (
     <section className="reservation">
       <Container>
         <form onSubmit={handleSubmit} id="form" noValidate>
+        {isSubmitting && valid ? <small className='success-message'>Success! Your request has been submitted.</small> : null}
           <label name="name" placeholder="Name">
             <input
               type="text"
@@ -188,7 +191,7 @@ export default function Form() {
             </div>
           </div>
           <div className="people">
-            <button className="math" onClick={decrement}>
+            <button type="button" className="math" onClick={decrement}>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="7"
@@ -204,7 +207,7 @@ export default function Form() {
             <strong name="people">
               {count} {count === 1 ? "person" : "people"}
             </strong>
-            <button className="math" onClick={increment}>
+            <button type="button" className="math" onClick={increment}>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="10"
