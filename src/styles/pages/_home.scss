@@ -1,14 +1,14 @@
 .homeHeader {
-  background-image: url("../../assets/homepage/hero-bg-mobile.jpg");
+  // background-image: url("../../assets/homepage/hero-bg-mobile.jpg");
   background-size: contain;
 
-  @include med {
-    background-image: url("../../assets/homepage/hero-bg-tablet.jpg");
-  }
+  // @include med {
+  //   background-image: url("../../assets/homepage/hero-bg-tablet.jpg");
+  // }
 
   @include xl {
     max-height: 82rem;
-    background-image: url("../../assets/homepage/hero-bg-desktop.jpg");
+    // background-image: url("../../assets/homepage/hero-bg-desktop.jpg");
     background-size: cover;
   }
 }
