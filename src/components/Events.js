@@ -10,6 +10,7 @@ function Events() {
 
   return (
     <section className="events">
+      <h2 className="sr-only">events at dine</h2>
       <Container>
         <article>
           <picture>
