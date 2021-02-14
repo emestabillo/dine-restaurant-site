@@ -13,14 +13,18 @@ export default function Form() {
     handleChange,
     handleSubmit,
     valid,
-    isSubmitting
+    isSubmitting,
   } = useForm(validate);
 
   return (
     <section className="reservation">
       <Container>
         <form onSubmit={handleSubmit} id="form" noValidate>
-        {isSubmitting && valid ? <small className='success-message'>Success! Your request has been submitted.</small> : null}
+          {isSubmitting && valid ? (
+            <small className="success-message">
+              Success! Your request has been submitted.
+            </small>
+          ) : null}
           <label name="name" placeholder="Name">
             <input
               type="text"
@@ -32,8 +36,8 @@ export default function Form() {
               required
             />
             {errors.name && (
-               <small className="error-message">{errors.name}</small>
-             )} 
+              <small className="error-message">{errors.name}</small>
+            )}
           </label>
           <label>
             <input
@@ -49,9 +53,17 @@ export default function Form() {
               <small className="error-message">{errors.email}</small>
             )}
           </label>
-          <div className="date grid">
+          <fieldset className="date grid">
             <div className="field-info">
-              <p className={`heading ${errors.date && 'error-color'}`}>Pick a date</p>
+              <legend
+                className={
+                  errors.date
+                    ? `heading ${errors.date && "error-color"}`
+                    : "heading"
+                }
+              >
+                Pick a date
+              </legend>
               {errors.date && <p className="error-message">{errors.date}</p>}
             </div>
             <div className="date-picker">
@@ -81,7 +93,9 @@ export default function Form() {
                   <option value="december">12</option>
                 </select>
               </div>
-              <label htmlFor="day" className="sr-only">day</label>
+              <label htmlFor="day" className="sr-only">
+                day
+              </label>
               <select
                 name="day"
                 id="day"
@@ -122,7 +136,9 @@ export default function Form() {
                 <option value="30">30</option>
                 <option value="31">31</option>
               </select>
-              <label htmlFor="year" className="sr-only">year</label>
+              <label htmlFor="year" className="sr-only">
+                year
+              </label>
               <select
                 name="year"
                 id="year"
@@ -135,14 +151,24 @@ export default function Form() {
                 <option value="2022">2022</option>
               </select>
             </div>
-          </div>
-          <div className="time grid">
+          </fieldset>
+          <fieldset className="time grid">
             <div className="field-info">
-              <p className={`heading ${errors.time && "error-color"}`}>Pick a time</p>
+              <legend
+                className={
+                  errors.time
+                    ? `heading ${errors.time && "error-color"}`
+                    : "heading"
+                }
+              >
+                Pick a time
+              </legend>
               {errors.time && <p className="error-message">{errors.time}</p>}
             </div>
             <div className="time-picker">
-              <label htmlFor="hour" className="sr-only">hour</label>
+              <label htmlFor="hour" className="sr-only">
+                hour
+              </label>
               <select
                 name="hour"
                 onChange={handleChange}
@@ -164,7 +190,9 @@ export default function Form() {
                 <option value="11">11</option>
                 <option value="12">12</option>
               </select>
-              <label htmlFor="minutes" className="sr-only">minutes</label>
+              <label htmlFor="minutes" className="sr-only">
+                minutes
+              </label>
               <select
                 name="minutes"
                 onChange={handleChange}
@@ -177,19 +205,21 @@ export default function Form() {
                 <option value="30">30</option>
                 <option value="45">45</option>
               </select>
-              <label htmlFor="period" className="sr-only">am or pm</label>
-                <select
-                  name="period"
-                  id="period"
-                  onChange={handleChange}
-                  value={values.period}
-                  required
-                > 
-                  <option value="am">AM</option>
-                  <option value="pm">PM</option>
-                </select>
+              <label htmlFor="period" className="sr-only">
+                am or pm
+              </label>
+              <select
+                name="period"
+                id="period"
+                onChange={handleChange}
+                value={values.period}
+                required
+              >
+                <option value="am">AM</option>
+                <option value="pm">PM</option>
+              </select>
             </div>
-          </div>
+          </fieldset>
           <div className="people">
             <button type="button" className="math" onClick={decrement}>
               <svg
