@@ -2,15 +2,13 @@
 
 ![Design preview for the Dine Website Challenge coding challenge](./public/preview.jpg)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
 ## The challenge
 
 The challenge is to build out this 2-page website and get it looking as close to the design as possible. Figma file is provided with style guide.
 
 ### Motivation
 
-I've started learning React and to avoid tutorial hell, I thought this multipage design is the perfect way to apply what I've learned so far.
+I've started learning React, and I thought this multipage design is the perfect way to apply what I've learned so far.
 
 ### User stories
 
