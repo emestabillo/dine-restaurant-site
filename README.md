@@ -34,7 +34,7 @@ You will also see any lint errors in the console.
 
 ## Learning Outcomes
 
-- The overarching lesson for me in developing the site was project structure. I was unfamiliar with how to access images, and there were several ways to choose from in terms of linking styles to the components. For the images, I eventually used named imports coming from one [js file](./index.js). I chose to create a separate style folder utilizing 7-1 for CSS.
+- The overarching lesson for me in developing the site was project structure. I was unfamiliar with how to access images, and there were several ways to choose from in terms of linking styles to the components. For the images, I eventually used named imports coming from one [js file](./src/assets/index.js). I chose to create a separate style folder utilizing 7-1 for CSS.
 
 - Creating the form and validation logic was the hardest part of the project. Not reaching out to the DOM directly and letting state be maintained by React was a challenge.
 
